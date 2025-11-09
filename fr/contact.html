@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Mon CV en ligne</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="formations.html">Formations</a></li>
+                <li><a href="experiences.html">Expériences</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="dropdown">
+                    <button class="dropbtn">🇫🇷</button>
+                    <div class="dropdown-content">
+                        <a href="../fr/contact.html">Français</a>
+                        <a href="../en/contact.html">English</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contactez-moi</h1>
+        <section class="contact-form">
+            <form action="https://formspree.io/f/xgvnlkkr" method="POST">
+                
+                <label for="name">Nom :</label>
+                <input type="text" name="name" placeholder="Martin Dupont" required>
+
+                <label for="email">Courriel :</label>
+                <input type="email" name="email" placeholder="martin.dupont@example.com" required>
+
+                <input type="hidden" name="subject" value="Nouveau message de votre CV en ligne de la part de {{ name }}">
+
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" rows="3" required></textarea>
+
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Robin Laumonier</p>
+        <div class="social-links">
+            <a href="https://fr.linkedin.com/in/robin-laumonier-860854227" target="_blank">
+                <img src="images/linkedin.png" alt="LinkedIn">
+                LinkedIn
+            </a>
+            <a href="https://github.com/PamplemoussRose" target="_blank">
+                <img src="images/github.png" alt="GitHub">
+                GitHub
+            </a>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
+
