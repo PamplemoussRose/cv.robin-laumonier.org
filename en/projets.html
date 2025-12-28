@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - My Online CV</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="formations.html">Education</a></li>
+                <li><a href="experiences.html">Experiences</a></li>
+                <li><a href="projets.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="dropdown">
+                    <button class="dropbtn">🇬🇧</button>
+                    <div class="dropdown-content">
+                        <a href="../fr/projets.html">Français</a>
+                        <a href="../en/projets.html">English</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>My Projects</h1>
+        <section class="projet-content">
+            <div class="projet-list">
+                <ul>
+                    <li data-projet="proj6">Self-hosted web server</li>
+                    <li data-projet="proj5">Proof of concept Passplat Project</li>
+                    <li data-projet="proj4">Work time management software</li>
+                    <li data-projet="proj3">Graph management library</li>
+                    <li data-projet="proj2">Chip-8 Emulator</li>
+                    <li data-projet="proj1">Advanced Connect Four</li>
+                </ul>
+            </div>
+            <div class="projet-detail">
+                <div id="proj6" class="detail-item">
+                    <h2>Self-hosted web server</h2>
+                    <p><strong>Date :</strong> October 2025</p>
+                    <p><strong>Description : </strong><br>
+                        Setting up an Nginx web server on a Raspberry PI with firewall configuration, dynamic DNS, and 
+                        secure connection via SSH on the PI and HTTPS for websites.
+                    </p>
+                    <p><strong>Skills used :</strong>
+                    <ul>
+                        <li>Linux</li>
+                        <li>Secure Shell (SSH)</li>
+                        <li>Firewall configuration</li>
+                        <li>Nginx web server configuration</li>
+                        <li>Dynamic DNS configuration</li>
+                    </ul>
+                    </p>
+                </div>
+                <div id="proj5" class="detail-item" style="display:none;">
+                    <h2>Proof of concept Passplat Project</h2>
+                    <p><strong>Date :</strong> October 2024 - April 2025</p>
+                    <p><strong>Description : </strong><br>
+                        Creation of a proof of concept for a system aimed at dematerialising deposits for the Passplat project, an initiative of the Zéro Déchet Touraine association.
+                    </p>
+                    <p><strong>Skills used :</strong>
+                    <ul>
+                        <li>Project management</li>
+                        <li>Specifications compliance</li>
+                        <li>Client communication</li>
+                        <li>Meeting of deadlines</li>
+                        <li>Java development</li>
+                        <li>React Native development</li>
+                    </ul>
+                    </p>
+                </div>
+                <div id="proj4" class="detail-item" style="display:none;">
+                    <h2>Work time management software</h2>
+                    <p><strong>Date :</strong> April 2024 - May 2024</p>
+                    <p><strong>Description : </strong><br>
+                        Development of an attendance management application using a main application serving as the core and 
+                        small applications representing the company's time clocks.
+                    </p>
+                    <p><strong>Skills used :</strong>
+                    <ul>
+                        <li>UML modeling</li>
+                        <li>Human-machine interface design</li>
+                        <li>Design patterns</li>
+                        <li>Java development</li>
+                        <li>JavaFX</li>
+                    </ul>
+                    </p>
+                </div>
+                <div id="proj3" class="detail-item" style="display:none;">
+                    <h2>Graph management library</h2>
+                    <p><strong>Date :</strong> March 2024 - May 2024</p>
+                    <p><strong>Description : </strong><br>
+                        Creation of a library used to manipulate directed or undirected graphs, as well as to search for maximum cliques in a graph.
+                    </p>
+                    <p><strong>Skills used :</strong>
+                    <ul>
+                        <li>UML modeling</li>
+                        <li>Design patterns</li>
+                        <li>C++ development</li>
+                    </ul>
+                    </p>
+                </div>
+                <div id="proj2" class="detail-item" style="display:none;">
+                    <h2>Chip-8 Emulator</h2>
+                    <p><strong>Date :</strong> December 2023 - January 2024</p>
+                    <p><strong>Description : </strong><br>
+                        Development of an emulator capable of reading and executing Chip-8 ROMs.
+                    </p>
+                    <p><strong>Skills used :</strong>
+                    <ul>
+                        <li>Modeling</li>
+                        <li>C development</li>
+                    </ul>
+                    </p>
+                </div>
+                <div id="proj1" class="detail-item" style="display:none;">
+                    <h2>Advanced Connect Four</h2>
+                    <p><strong>Date :</strong> December 2023 - January 2024</p>
+                    <p><strong>Description : </strong><br>
+                        Development of an Advanced Connect Four with additional features acting on rows, columns, or the entire board.
+                    </p>
+                    <p><strong>Skills used :</strong>
+                    <ul>
+                        <li>Software design</li>
+                        <li>UML modeling</li>
+                        <li>Human-machine interface design</li>
+                        <li>Python development</li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Robin Laumonier</p>
+        <div class="social-links">
+            <a href="https://fr.linkedin.com/in/robin-laumonier-860854227" target="_blank">
+                <img src="images/linkedin.png" alt="LinkedIn">
+                LinkedIn
+            </a>
+            <a href="https://github.com/PamplemoussRose" target="_blank">
+                <img src="images/github.png" alt="GitHub">
+                GitHub
+            </a>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
+

@@ -32,6 +32,23 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     });
+
+    // Pour la page Projets
+    const projetListItems = document.querySelectorAll('.projet-list ul li');
+    const projetDetailItems = document.querySelectorAll('.projet-detail .detail-item');
+
+    projetListItems.forEach(item => {
+        item.addEventListener('click', function() {
+            const targetId = this.getAttribute('data-projet');
+            projetDetailItems.forEach(detail => {
+                if (detail.id === targetId) {
+                    detail.style.display = 'block';
+                } else {
+                    detail.style.display = 'none';
+                }
+            });
+        });
+    });
 });
 
 window.onbeforeunload = () => {
