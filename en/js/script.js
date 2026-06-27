@@ -1,18 +1,3 @@
-function loadComponent(id, path) {
-  fetch(path)
-    .then(response => {
-      if (!response.ok) throw new Error(`Erreur chargement : ${path}`);
-      return response.text();
-    })
-    .then(html => {
-      document.getElementById(id).innerHTML = html;
-    })
-    .catch(err => console.error(err));
-}
-
-loadComponent('header', '/components/header.html');
-loadComponent('footer', '/components/footer.html');
-
 document.addEventListener('DOMContentLoaded', function() {
     // Pour la page Formations
     const educationListItems = document.querySelectorAll('.education-list ul li');
