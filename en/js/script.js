@@ -1,3 +1,16 @@
+async function loadComponent(id, path) {
+  try {
+    const response = await fetch(path);
+    if (!response.ok) throw new Error(`${response.status} — ${path}`);
+    document.getElementById(id).innerHTML = await response.text();
+  } catch (err) {
+    console.error(err);
+  }
+}
+
+loadComponent('header', '/components/header.html');
+loadComponent('footer', '/components/footer.html');
+
 document.addEventListener('DOMContentLoaded', function() {
     // Pour la page Formations
     const educationListItems = document.querySelectorAll('.education-list ul li');
